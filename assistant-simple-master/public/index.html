@@ -1,0 +1,69 @@
+<html>
+<head>
+  <base href="/">
+  <title>Watson Assistant Chat App</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+   .cor {
+    background: #E0E6F8
+   }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="conversation.svg" />
+  <meta property="og:title" content="Conversation Chat Simple" />
+  <meta property="og:description" content="Sample application that shows how to use the Watson Assistant API to identify user intents" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/app.css">
+  <color
+</head>
+
+<body class="cor">
+  
+  
+      <div class="chat-column">
+       
+        <div style="border: 4px solid #000000; border-radius: 11px;" id="scrollingChat">
+           <div style="background: #0489B1; width: 100%; height: 40px;"><div style="color:black;
+    font-size: 18pt;
+    display: flex;
+    justify-content: center;
+    padding: 7px;"> DESAFIO MORTY </div></div>
+        </div>
+        <p class="user-typing" id="user-typing-field"></p>
+        <div style=" background: #0489B1; border-radius: 10px;">
+          <label for="textInput" class="inputOutline">
+          <input id="textInput" class="input responsive-column" placeholder="Type something" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)"
+            autofocus>
+            
+        </label>
+        </div>
+        <div class="disclaimer">
+          * This system is for demonstration purposes only and is not intended to process Personal Data. No Personal
+          Data is to be entered
+          into this system as it may not have the necessary controls in place to meet the requirements of the General
+          Data Protection
+          Regulation (EU) 2016/679.
+
+        </div>
+      </div>
+    </div>
+    
+     
+      <div id="payload-request" class="payload"></div>
+      <div id="payload-response" class="payload"></div>
+      
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/conversation.js"></script>
+  
+  
+  <script src="js/global.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/watson-developer-cloud/watson-developer-cloud.github.io/master/analytics.js"></script>
+</body>
+</html>
